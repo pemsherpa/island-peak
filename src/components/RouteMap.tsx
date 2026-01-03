@@ -109,13 +109,15 @@ const RouteMap = () => {
               initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className={`relative mb-8 pl-12 md:mb-12 md:pl-0 ${
-                index % 2 === 0 ? "md:pr-1/2 md:text-right" : "md:pl-1/2 md:ml-auto"
+              className={`relative mb-8 pl-12 md:mb-12 md:w-[calc(50%-2rem)] md:pl-0 ${
+                index % 2 === 0 ? "md:text-right" : "md:ml-auto"
               }`}
             >
               {/* Timeline Node */}
               <div
-                className={`absolute left-0 flex h-8 w-8 items-center justify-center rounded-full md:left-1/2 md:-translate-x-1/2 ${
+                className={`absolute left-0 flex h-8 w-8 items-center justify-center rounded-full md:left-auto ${
+                  index % 2 === 0 ? "md:-right-[2.5rem]" : "md:-left-[2.5rem]"
+                } ${
                   point.highlight
                     ? "bg-accent shadow-lg shadow-accent/30"
                     : "bg-primary"
@@ -130,7 +132,7 @@ const RouteMap = () => {
                   point.highlight
                     ? "border-accent/30 bg-accent/5"
                     : "border-border bg-card"
-                } ${index % 2 === 0 ? "md:mr-12" : "md:ml-12"}`}
+                }`}
               >
                 <div className={`flex items-center gap-2 mb-2 ${index % 2 === 0 ? "md:justify-end" : ""}`}>
                   <span className="font-montserrat text-xs font-bold uppercase tracking-wider text-primary">
