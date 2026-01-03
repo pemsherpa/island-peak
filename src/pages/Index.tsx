@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import ClimbOverview from "@/components/ClimbOverview";
+import AltitudeChart from "@/components/AltitudeChart";
 import RouteMap from "@/components/RouteMap";
 import ClimbingGuide from "@/components/ClimbingGuide";
 import GearChecklist from "@/components/GearChecklist";
@@ -16,6 +17,7 @@ const Index = () => {
       <main>
         <Hero />
         <ClimbOverview />
+        <AltitudeChart />
         <RouteMap />
         <ClimbingGuide />
         <GearChecklist />

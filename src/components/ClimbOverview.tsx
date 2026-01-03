@@ -65,10 +65,29 @@ const ClimbOverview = () => {
           </h2>
           <div className="section-divider mb-6" />
           <p className="mx-auto max-w-3xl font-inter text-lg text-muted-foreground">
-            Island Peak, known locally as Imja Tse, stands as one of Nepal's most
-            popular trekking peaks. Rising from the spectacular Imja Valley, it
-            offers climbers a true Himalayan experience with technical
-            challenges that prepare you for higher objectives.
+            Locally known as <strong className="text-snow">Imja Tse</strong>, Island Peak is a spectacular summit 
+            amid the giants of the Himalaya. Tucked away up the Chhukung Valley, this beautiful mountain 
+            looks like an island rising from a sea of ice—dwarfed on both sides by the stupendous 
+            Lhotse/Nuptse South Wall to the north and Baruntse to the south.
+          </p>
+        </motion.div>
+
+        {/* Historical Context */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="mb-12 rounded-2xl border border-primary/20 bg-gradient-to-r from-primary/5 via-transparent to-accent/5 p-6 md:p-8"
+        >
+          <h3 className="mb-4 font-montserrat text-xl font-bold text-snow md:text-2xl">
+            A Peak with Legendary History
+          </h3>
+          <p className="font-inter text-muted-foreground leading-relaxed">
+            If you have dreamed of climbing a technical 6,000-metre Himalayan summit, Island Peak may answer your wishes. 
+            It was the <strong className="text-primary">training peak used by Sir Edmund Hillary and Sherpa Tenzing Norgay in 1953</strong> before 
+            their historic Everest ascent. The route they discovered is the same one used today. Island Peak remains 
+            a popular training ground for Everest aspirants because the skills required—crossing crevasses with ladders, 
+            using jumars on fixed lines, managing exposure on ridges—are identical to those needed on the world's highest peak.
           </p>
         </motion.div>
 
@@ -115,56 +134,89 @@ const ClimbOverview = () => {
           <div className="grid gap-8 md:grid-cols-2">
             <div>
               <h3 className="mb-4 font-montserrat text-xl font-bold text-snow md:text-2xl">
-                Why Island Peak?
+                Views from the Summit
               </h3>
               <p className="mb-4 font-inter text-muted-foreground leading-relaxed">
-                Island Peak earned its name from early Everest expeditions who
-                viewed it from the surrounding ridges, where it appeared as an
-                island rising from a sea of ice. The peak offers the perfect
-                introduction to technical Himalayan climbing.
+                The views from the top of Island Peak are truly unforgettable, and all the more memorable 
+                for the spectacular airy ridge climb to reach them. Standing at 6,189m, you're surrounded 
+                by some of the world's highest mountains.
               </p>
               <p className="font-inter text-muted-foreground leading-relaxed">
-                The climb combines high-altitude trekking through the legendary
-                Khumbu region with genuine mountaineering challenges: glacier
-                travel, fixed-rope ascents, and a dramatic summit ridge that
-                rewards you with 360° views of Everest, Lhotse, and Makalu.
+                On a clear day, you'll witness <strong className="text-snow">360° panoramic views</strong> of 
+                Everest, Lhotse, Makalu, Cho Oyu, Ama Dablam, and Baruntse. The Imja Glacier stretches below 
+                like a frozen river, while the dramatic south wall of Nuptse towers to the north.
               </p>
             </div>
             <div>
               <h3 className="mb-4 font-montserrat text-xl font-bold text-snow md:text-2xl">
-                Technical Summary
+                Skills You'll Learn & Use
               </h3>
+              <p className="mb-4 font-inter text-muted-foreground leading-relaxed">
+                During this expedition, you will learn and practice essential high-altitude mountaineering skills:
+              </p>
               <ul className="space-y-3 font-inter text-muted-foreground">
                 <li className="flex items-start gap-3">
                   <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                   <span>
-                    <strong className="text-snow">Glacier Crossing:</strong> Rope
-                    work and crevasse awareness required
+                    <strong className="text-snow">Glacier Travel:</strong> Using climbing ropes, 
+                    crossing crevasses with ladders
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                   <span>
-                    <strong className="text-snow">Headwall (45-50°):</strong>{" "}
-                    Fixed ropes and jumar ascent
+                    <strong className="text-snow">Fixed Rope Techniques:</strong> Using jumars to ascend, 
+                    descenders for rappelling
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                   <span>
-                    <strong className="text-snow">Summit Ridge:</strong> Exposed
-                    knife-edge requiring careful footwork
+                    <strong className="text-snow">Mixed Terrain:</strong> Scrambling on snow, ice, 
+                    and rocky sections
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                   <span>
-                    <strong className="text-snow">Summit Push:</strong> 6-8 hours
-                    from High Camp in ideal conditions
+                    <strong className="text-snow">Exposure Management:</strong> Navigating the narrow 
+                    summit ridge safely
                   </span>
                 </li>
               </ul>
             </div>
+          </div>
+        </motion.div>
+
+        {/* The Expedition Journey */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mt-8 rounded-2xl border border-border bg-card p-8 md:p-12"
+        >
+          <h3 className="mb-6 font-montserrat text-xl font-bold text-snow md:text-2xl">
+            The Expedition Journey
+          </h3>
+          <div className="space-y-4 font-inter text-muted-foreground leading-relaxed">
+            <p>
+              The Island Peak expedition typically spans <strong className="text-snow">16-19 days</strong>, 
+              including days in Kathmandu for briefings and permits. The gradual ascent up the legendary 
+              Khumbu Valley provides excellent acclimatization, passing through Sherpa villages, ancient 
+              monasteries, and some of the most breathtaking mountain scenery on Earth.
+            </p>
+            <p>
+              Before tackling Island Peak, many climbers enhance their acclimatization with a hike up 
+              <strong className="text-primary"> Chhukung Ri (5,550m)</strong>, which offers spectacular views 
+              of the Lhotse south wall. By the time you reach Base Camp, you'll be well-acclimatized and 
+              mountain fit.
+            </p>
+            <p>
+              <strong className="text-accent">Summit Day</strong> involves crossing a crevassed glacier using 
+              climbing ropes, negotiating ladders, ascending the 300m headwall on fixed lines, and finally 
+              traversing the exposed summit ridge. It's demanding but achievable for those with proper 
+              preparation and determination.
+            </p>
           </div>
         </motion.div>
       </div>
