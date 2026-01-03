@@ -65,7 +65,7 @@ const PermitsLogistics = () => {
     <section
       id="permits"
       ref={ref}
-      className="relative bg-background py-20 md:py-32"
+      className="relative bg-background py-24 md:py-32"
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
@@ -73,7 +73,7 @@ const PermitsLogistics = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-12 text-center"
         >
           <h2 className="mb-4 font-montserrat text-3xl font-bold text-snow md:text-4xl lg:text-5xl">
             Permits & <span className="text-gradient-glacier">Logistics</span>
@@ -86,8 +86,8 @@ const PermitsLogistics = () => {
         </motion.div>
 
         {/* Permits Grid */}
-        <div className="mb-16">
-          <h3 className="mb-8 text-center font-montserrat text-xl font-bold text-snow md:text-2xl">
+        <div className="mb-12">
+          <h3 className="mb-6 text-center font-montserrat text-xl font-bold text-snow md:text-2xl">
             Required Permits
           </h3>
           <div className="grid gap-6 md:grid-cols-3">

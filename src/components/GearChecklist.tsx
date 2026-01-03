@@ -72,7 +72,7 @@ const GearChecklist = () => {
     <section
       id="gear"
       ref={ref}
-      className="relative bg-slate-deep py-20 md:py-32"
+      className="relative bg-slate-deep py-24 md:py-32"
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
@@ -80,7 +80,7 @@ const GearChecklist = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-12 text-center"
         >
           <h2 className="mb-4 font-montserrat text-3xl font-bold text-snow md:text-4xl lg:text-5xl">
             Gear <span className="text-gradient-glacier">Checklist</span>
@@ -154,7 +154,7 @@ const GearChecklist = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-12 flex items-start gap-4 rounded-xl border border-primary/30 bg-primary/5 p-6"
+          className="mt-10 flex items-start gap-4 rounded-xl border border-primary/30 bg-primary/5 p-6"
         >
           <AlertCircle className="h-6 w-6 flex-shrink-0 text-primary" />
           <div>

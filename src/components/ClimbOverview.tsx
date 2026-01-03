@@ -50,7 +50,7 @@ const ClimbOverview = () => {
     <section
       id="overview"
       ref={ref}
-      className="relative bg-background py-20 md:py-32"
+      className="relative bg-background py-24 md:py-32"
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
@@ -58,7 +58,7 @@ const ClimbOverview = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-12 text-center"
         >
           <h2 className="mb-4 font-montserrat text-3xl font-bold text-snow md:text-4xl lg:text-5xl">
             The <span className="text-gradient-glacier">Climb</span> Overview
@@ -129,7 +129,7 @@ const ClimbOverview = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-16 rounded-2xl border border-border bg-card p-8 md:p-12"
+          className="mt-10 rounded-2xl border border-border bg-card p-8 md:p-10"
         >
           <div className="grid gap-8 md:grid-cols-2">
             <div>
@@ -193,7 +193,7 @@ const ClimbOverview = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-8 rounded-2xl border border-border bg-card p-8 md:p-12"
+          className="mt-6 rounded-2xl border border-border bg-card p-8 md:p-10"
         >
           <h3 className="mb-6 font-montserrat text-xl font-bold text-snow md:text-2xl">
             The Expedition Journey

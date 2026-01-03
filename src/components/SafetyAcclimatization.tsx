@@ -62,7 +62,7 @@ const SafetyAcclimatization = () => {
     <section
       id="safety"
       ref={ref}
-      className="relative bg-background py-20 md:py-32"
+      className="relative bg-background py-24 md:py-32"
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
@@ -70,7 +70,7 @@ const SafetyAcclimatization = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-12 text-center"
         >
           <h2 className="mb-4 font-montserrat text-3xl font-bold text-snow md:text-4xl lg:text-5xl">
             Safety & <span className="text-gradient-glacier">Acclimatization</span>
@@ -88,7 +88,7 @@ const SafetyAcclimatization = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mb-12 flex items-start gap-4 rounded-xl border border-accent/40 bg-accent/10 p-6"
+          className="mb-10 flex items-start gap-4 rounded-xl border border-accent/40 bg-accent/10 p-6"
         >
           <AlertTriangle className="h-8 w-8 flex-shrink-0 text-accent" />
           <div>
@@ -148,7 +148,7 @@ const SafetyAcclimatization = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-12 rounded-2xl border border-primary/30 bg-card p-8 md:p-12"
+          className="mt-10 rounded-2xl border border-primary/30 bg-card p-8 md:p-10"
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">

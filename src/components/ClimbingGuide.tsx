@@ -40,7 +40,7 @@ const ClimbingGuide = () => {
     <section
       id="climbing"
       ref={ref}
-      className="relative bg-background py-20 md:py-32"
+      className="relative bg-background py-24 md:py-32"
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
@@ -48,7 +48,7 @@ const ClimbingGuide = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-12 text-center"
         >
           <h2 className="mb-4 font-montserrat text-3xl font-bold text-snow md:text-4xl lg:text-5xl">
             Climbing <span className="text-gradient-glacier">Guide</span>
@@ -61,7 +61,7 @@ const ClimbingGuide = () => {
         </motion.div>
 
         {/* Climbing Sections */}
-        <div className="space-y-12">
+        <div className="space-y-8">
           {climbingSections.map((section, index) => (
             <motion.div
               key={section.title}
@@ -127,7 +127,7 @@ const ClimbingGuide = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-12 flex items-start gap-4 rounded-xl border border-accent/30 bg-accent/5 p-6"
+          className="mt-10 flex items-start gap-4 rounded-xl border border-accent/30 bg-accent/5 p-6"
         >
           <AlertTriangle className="h-6 w-6 flex-shrink-0 text-accent" />
           <div>
@@ -149,7 +149,7 @@ const ClimbingGuide = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="mt-8 flex items-start gap-4 rounded-xl border border-primary/30 bg-primary/5 p-6"
+          className="mt-6 flex items-start gap-4 rounded-xl border border-primary/30 bg-primary/5 p-6"
         >
           <Shield className="h-6 w-6 flex-shrink-0 text-primary" />
           <div>

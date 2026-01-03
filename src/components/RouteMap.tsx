@@ -70,7 +70,7 @@ const RouteMap = () => {
     <section
       id="route"
       ref={ref}
-      className="relative bg-slate-deep py-20 md:py-32"
+      className="relative bg-slate-deep py-24 md:py-32"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -86,7 +86,7 @@ const RouteMap = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-12 text-center"
         >
           <h2 className="mb-4 font-montserrat text-3xl font-bold text-snow md:text-4xl lg:text-5xl">
             Expedition <span className="text-gradient-glacier">Route</span>
