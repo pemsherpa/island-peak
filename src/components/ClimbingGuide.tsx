@@ -15,7 +15,7 @@ const climbingSections = [
       "Managing rope drag",
       "Energy conservation at altitude",
     ],
-    image: "/placeholder.svg",
+    image: "https://imgur.com/K70QZK4.jpg",
   },
   {
     title: "Summit Ridge",
@@ -28,7 +28,7 @@ const climbingSections = [
       "Exposure management",
       "Summit photography tips",
     ],
-    image: "/placeholder.svg",
+    image: "https://imgur.com/aXcKPns.jpg",
   },
 ];
 
@@ -71,23 +71,17 @@ const ClimbingGuide = () => {
               className="overflow-hidden rounded-2xl border border-border bg-card"
             >
               <div className="grid gap-0 lg:grid-cols-2">
-                {/* Image Placeholder */}
+                {/* Section Image */}
                 <div
-                  className={`relative min-h-[300px] bg-slate-medium lg:min-h-[400px] ${
+                  className={`relative min-h-[300px] lg:min-h-[400px] ${
                     index % 2 === 1 ? "lg:order-2" : ""
                   }`}
                 >
-                  <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
-                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                      <ArrowUpRight className="h-8 w-8 text-primary" />
-                    </div>
-                    <p className="font-montserrat text-lg font-bold text-snow">
-                      Diagram Placeholder
-                    </p>
-                    <p className="mt-2 font-inter text-sm text-muted-foreground">
-                      Add your {section.title.toLowerCase()} route diagram here
-                    </p>
-                  </div>
+                  <img
+                    src={section.image}
+                    alt={section.title}
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
                   {/* Gradient overlay */}
                   <div className={`absolute inset-0 bg-gradient-to-${index % 2 === 1 ? 'l' : 'r'} from-card via-transparent to-transparent lg:via-card/50`} />
                 </div>

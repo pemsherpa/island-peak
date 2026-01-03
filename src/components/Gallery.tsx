@@ -3,55 +3,61 @@ import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { X, ChevronLeft, ChevronRight, ImageIcon } from "lucide-react";
 
-// Placeholder gallery - user will replace with their own images
+// Gallery images - using direct Imgur links (i.imgur.com with file extension)
 const galleryImages = [
   {
     id: 1,
-    src: "",
+    src: "https://i.imgur.com/xXyMopr.jpg",
     alt: "Island Peak summit at sunrise with Everest in background",
-    placeholder: true,
+    placeholder: false,
   },
   {
     id: 2,
-    src: "",
+    src: "https://i.imgur.com/sOTdMp2.jpg",
     alt: "Climber crossing crevasse on Island Peak headwall",
-    placeholder: true,
+    placeholder: false,
   },
   {
     id: 3,
-    src: "",
+    src: "https://i.imgur.com/KGnBaCq.jpg",
     alt: "High Camp setup with Imja Glacier below",
-    placeholder: true,
+    placeholder: false,
   },
   {
     id: 4,
-    src: "",
+    src: "https://i.imgur.com/NM1XGlY.jpg",
     alt: "Team roped up on the summit ridge",
-    placeholder: true,
+    placeholder: false,
   },
   {
     id: 5,
-    src: "",
+    src: "https://i.imgur.com/CIqdxN4.jpg",
     alt: "Prayer flags at Island Peak Base Camp",
-    placeholder: true,
+    placeholder: false,
   },
   {
     id: 6,
-    src: "",
+    src: "https://i.imgur.com/57LXYNU.jpg",
     alt: "Panoramic view from Island Peak summit",
-    placeholder: true,
+    placeholder: false,
   },
   {
     id: 7,
-    src: "",
+    src: "https://i.imgur.com/aXcKPns.jpg",
     alt: "Sherpa guide fixing ropes on headwall",
-    placeholder: true,
+    placeholder: false,
   },
   {
     id: 8,
-    src: "",
+    src: "https://imgur.com/LHfK8JJ.jpg",
     alt: "Namche Bazaar with Kongde peak behind",
-    placeholder: true,
+    placeholder: false,
+  },
+  {
+    id: 9,
+    src: "https://imgur.com/rpHkxvU.jpg",
+    alt: "Namche Bazaar with Kongde peak behind",
+    placeholder: false,
   },
 ];
 
